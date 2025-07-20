@@ -1,0 +1,139 @@
+/* ==== Background and Body ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* New cool gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Container ==== */
+.app-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* ==== Input Box ==== */
+.input-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  width: 70%;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(29, 233, 182, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #1de9b6;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bfa5;
+  transform: scale(1.05);
+}
+
+/* ==== Category Tabs ==== */
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 10px 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #1de9b6;
+  color: #ffffff;
+}
+
+/* ==== Error Message ==== */
+#error {
+  color: #ff1744;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* ==== Gallery ==== */
+#gallery {
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 400px;
+  display: none;
+  overflow: hidden;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+}
+
+#gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+/* ==== Animation ==== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

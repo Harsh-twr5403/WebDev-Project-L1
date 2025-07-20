@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GIF App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>GIF Generator App</h1>
+
+  <div class="app-container">
+    <div class="input-box">
+      <input type="text" id="search" placeholder="Search GIF..." />
+      <button id="submit" type="button">Submit</button>
+    </div>
+
+    <div class="category-tabs">
+      <button class="category-btn" data-tag="cool">😎 Cool</button>
+      <button class="category-btn" data-tag="angry">😠 Angry</button>
+      <button class="category-btn" data-tag="sad">😢 Sad</button>
+      <button class="category-btn" data-tag="happy">😊 Happy</button>
+      <button class="category-btn" data-tag="love">❤️ Love</button>
+    </div>
+
+    <p id="error"></p>
+
+    <div id="results">
+      <div id="gallery">
+        <!-- GIFs will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script> 
+</body>
+</html>
